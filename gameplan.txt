@@ -1,0 +1,135 @@
+===========================
+Manage a city:
+===========================
+
+name your city
+name yourself (Mayor)
+
+not sure how time will work:
+  will time pass slowly even when not playing?
+  or will time only pass when playing?
+  or turn-based?
+
+cash and date are always shown
+
+===========================
+
+can spend money to build:
+  residential zone
+  commercial zone
+  industrial zone
+
+each zone type has a capacity, demand, and actual.
+the actual will rise if there is a capacity,
+at a rate multiplied by the demand, 
+and can decrease with negative demand
+
+
+happiness 
+  affects demand for residential zones.
+transportation 
+  must keep up with total zones capacity, 
+  else demand is lessened
+intelligence
+  increases income, off which tax is calculated
+  lowers crime, lessening need for police stations
+tourism
+  reduces demand for residential
+  increases tourist tax base income
+
+residential
+  increases max population
+  increases property tax revenue
+  increases demand for commercial
+  reduces demand for itself when built
+commercial
+  will reduce rate of immigration if too low (no stores)
+  increases sales tax revenue
+  increases demand for residential
+  reduces demand for itself when built
+industrial
+  increases pollution
+  greatly increases demand for commercial
+  increases industrial tax revenue
+  reduces demand for itself when built
+
+===========================
+
+can also spend money to build:
+  roads, public transit
+    increases pollution
+    has maintenance costs
+    increases transportation
+  parks
+    decreases pollution
+    increases happiness
+    has maintenance costs
+  fire departments
+    lack of lowers demand for everything
+    has maintenance costs
+  police stations
+    lack of lowers demand for everything
+    has maintenance costs
+  hospitals
+    lack of lowers demand for everything
+    has maintenance costs
+  schools
+    lack of lowers demand for everything
+    has maintenance costs
+    increases intelligence
+  public libraries
+    lack of lowers demand for everything
+    has maintenance costs
+    increases intelligence
+
+
+===========================
+menu map
+===========================
+
+*in most menus
+  help
+  back
+
+build zoning
+  build residential
+  build commercial
+  build industrial
+build public
+  transit
+    roads
+    public transit
+  parks n rec
+    park
+    nature reserve
+    zoo
+  services
+    hospital
+    fire department
+    police station
+  education
+    schools
+    libraries
+utilities
+  electricity
+  water
+build special (city must earn)
+  botanical garden
+  city hall
+  spaceport
+  museum of art
+  museum of science
+  university
+  sports stadium
+  obelisk
+  casino
+taxes, expenses
+legal
+mayor
+  name
+  bio
+game
+  save
+  load
+  settings
+  

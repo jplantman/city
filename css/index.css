@@ -1,0 +1,34 @@
+#cash, #date, #pop, #zoneDemand {
+  background: #2e2e2e;
+  color: #e4e4e4;
+  padding: 1px 4px;
+  margin: 1px 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#timerControls {
+  float: right;
+}
+
+#pause, #slow, #normal, #fast {
+  background: #2e2e2e;
+  color: #e4e4e4;
+  width: 2em;
+  height: 1.3em;
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#cityName {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 25px;
+  padding: 0 15px;
+}
+#cityName:hover, #cityName:active {
+  color: steelblue;
+}
