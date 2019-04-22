@@ -5,7 +5,7 @@ game.cashDisplay = document.getElementById("cash");
 
 game.showCash = function () {
   game.cashDisplay.innerHTML =
-    "$" + Math.round( mayor.cash );
+    "$" + Math.round( 100*mayor.cash )/100;
 }
 game.showCash();
 
@@ -29,18 +29,12 @@ game.showPop();
 // init demand display
 game.showZoneDemand();
 
-// change name
-game.nameDisplay = document.getElementById('cityName');
-game.nameDisplay.addEventListener('click', function () {
-  var newName = prompt("Enter new name for city:");
-  if (newName) {
-    city.name = newName;
-    game.nameDisplay.innerHTML = newName;
-  }
-});
-
 // timer
-game.speed = 6000;
+var minPerYear = 60 * 1000 / 12;
+var slowSpeed = 5 * minPerYear;
+var normalSpeed = 2.5 * minPerYear;
+var fastSpeed = 1 * minPerYear;
+game.speed = normalSpeed;
 game.tick = function () {
 
   setTimeout(
@@ -54,8 +48,9 @@ game.tick = function () {
   game.turn();
   game.showCash();
 }
-// start game in...
-setTimeout(game.tick, 3000);
+// start timer in...
+print("Starting Game. Speed set to normal.", "steelblue");
+setTimeout(game.tick, normalSpeed);
 
 // timer controls
 game.pause = function () {
@@ -72,7 +67,7 @@ document.getElementById("slow").addEventListener(
   'click',
   function () {
     game.paused = false;
-    game.speed = 6000;
+    game.speed = slowSpeed;
     print("Speed set to slow", "steelblue");
   }
 );
@@ -80,7 +75,7 @@ document.getElementById("normal").addEventListener(
   'click',
   function () {
     game.paused = false;
-    game.speed = 3000;
+    game.speed = normalSpeed;
     print("Speed set to normal", "steelblue");
   }
 );
@@ -88,8 +83,9 @@ document.getElementById("fast").addEventListener(
   'click',
   function () {
     game.paused = false;
-    game.speed = 1000;
+    game.speed = fastSpeed;
     print("Speed set to fast", "steelblue");
   }
 );
+game.nameDisplay.innerHTML = city.name;
 

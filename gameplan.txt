@@ -133,3 +133,7 @@ game
   load
   settings
   
+
+demand for a zone type is primarily affected by the current amount of the 2 other zone types.
+aka zones want to be similar
+

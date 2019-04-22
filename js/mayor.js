@@ -1,6 +1,6 @@
 // mayor data
 var mayor = {
-  name: "Player Mayor",
+  name: "Player",
   cash: 100, // in hundreds
   monthsInOffice: 0
 };

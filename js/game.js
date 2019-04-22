@@ -26,3 +26,6 @@ game.showDate = function(){
   game.dateDisplay.innerHTML = game.date;
 };
 game.showDate();
+
+// name display
+game.nameDisplay = document.getElementById('cityName');
